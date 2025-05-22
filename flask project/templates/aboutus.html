@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>About Us - AR Gym</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}"/>
+</head>
+<body>
+
+ <nav>
+             <a href="{{ url_for('home') }}" class="active">Home</a>
+<a href="{{ url_for('aboutus') }}" class="active">About Us</a>
+<a href="{{ url_for('membership') }}">Membership</a>
+<a href="{{ url_for('services') }}">Services</a>
+<a href="{{ url_for('gallery') }}">Gallery</a>
+<a href="{{ url_for('contactus') }}">Contactus</a>
+<a href="{{ url_for('login') }}">Login Here</a>
+<a href="{{ url_for('registration') }}">Registration</a>
+        </nav>
+
+
+    <h1>About Us</h1>
+
+    <img src="{{ url_for('static', filename='aboutus.jpg')}}" alt="Gym Image" />
+
+    <p>
+        AR Gym was founded with one simple mission: to empower individuals to lead healthier and stronger lives. 
+        We started with a vision to make fitness accessible and enjoyable for everyone — regardless of age, body type, or fitness level.
+        <br /><br />
+        Our team consists of certified personal trainers, nutrition experts, and passionate coaches who are committed to helping you achieve your personal fitness goals. 
+        At AR Gym, we blend modern training techniques with a friendly environment so you feel motivated and supported every step of the way.
+        <br /><br />
+        Come be a part of our fitness family and experience a transformation not just in your body, but in your lifestyle.
+    </p>
+    <footer>
+    <p style="color: white;">&copy; 2025 AR Gym. All rights reserved.</p>
+    <p style="color: white;">Contact us: info@argym.com | +92 3427258502</p>
+    <p style="color: white;">Follow us on:
+        <a href="https://www.facebook.com/">Facebook</a> |
+        <a href="https://www.instagram.com/#">Instagram</a> |
+        <a href="https://x.com/">Twitter</a>
+    </p>
+</footer>
+
+</body>
+</html>
